@@ -9,6 +9,18 @@ This is a header-only project, all you have to do is copy `include/ro/ptr.h` int
 
 The header is compatible from C++98 and up.
 
+### CMake
+
+If you're using `CMake` you can also use `find_package` after installing this project like this:
+
+```bash
+$> git clone https://github.com/cschlosser/ro_ptr.git
+$> cd ro_ptr
+$> mkdir build && cd build
+$> cmake ..
+$> make install
+```
+
 ## Example
 
 This is probably the most basic example how this wrapper can be useful.
