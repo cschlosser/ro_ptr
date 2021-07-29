@@ -31,6 +31,7 @@ http_archive(
   name = "com_github_cschlosser_ro_ptr",
   urls = ["https://github.com/cschlosser/ro_ptr/archive/refs/tags/<version>.zip"],
   sha256 = "...",
+  strip_prefix = "ro_ptr-<version>",
 )
 ```
 
