@@ -13,9 +13,9 @@ namespace readonly {
      * conversions from the the major two smart pointers and a unified interface for accessing
      * the pointer even when raw pointers are used.
      *
-     * @note This does not synchronization or whatsoever. If you need synchronized access to the
-     * underlying resource it is recommended to wrap it in a synchronizing structure and pass the pointer
-     * to that around.
+     * @note This does no synchronization or any other checking on the pointer whatsoever.
+     * If you need synchronized access to the underlying resource it is recommended to wrap it
+     * in a synchronizing structure and pass the pointer to that around.
      *
      * @include doc.cc
      */
