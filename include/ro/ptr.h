@@ -6,7 +6,7 @@
 #endif
 
 namespace readonly {
-    /**
+    /** @class ro_ptr ptr.h "ro/ptr.h"
      * @brief Wrapper structure around a raw pointer signaling only read access.
      *
      * This is essentially the same as passing const T* into an API call but it allows implicit
