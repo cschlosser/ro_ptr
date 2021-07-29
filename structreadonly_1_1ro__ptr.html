@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>ro_ptr: readonly::ro_ptr&lt; T &gt; Struct Template Reference</title>
+<title>ro_ptr: readonly::ro_ptr&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -72,14 +72,12 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="structreadonly_1_1ro__ptr-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">readonly::ro_ptr&lt; T &gt; Struct Template Reference</div>  </div>
+<div class="title">readonly::ro_ptr&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>Wrapper structure around a raw pointer signaling only read access.  
  <a href="structreadonly_1_1ro__ptr.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="ptr_8h_source.html">ro/ptr.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
@@ -116,7 +114,7 @@ const_pointer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" h
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><h3>template&lt;typename T&gt;<br />
-struct readonly::ro_ptr&lt; T &gt;</h3>
+class readonly::ro_ptr&lt; T &gt;</h3>
 
 <p>Wrapper structure around a raw pointer signaling only read access. </p>
 <p>This is essentially the same as passing const T* into an API call but it allows implicit conversions from the the major two smart pointers and a unified interface for accessing the pointer even when raw pointers are used.</p>
@@ -137,7 +135,7 @@ struct readonly::ro_ptr&lt; T &gt;</h3>
 <div class="line"><span class="keywordtype">void</span> foo(<a class="code" href="structreadonly_1_1ro__ptr.html">readonly::ro_ptr&lt;int&gt;</a> ptr) {</div>
 <div class="line">    std::cout &lt;&lt; *ptr &lt;&lt; std::endl;</div>
 <div class="line">}</div>
-<div class="ttc" id="astructreadonly_1_1ro__ptr_html"><div class="ttname"><a href="structreadonly_1_1ro__ptr.html">readonly::ro_ptr</a></div><div class="ttdoc">Wrapper structure around a raw pointer signaling only read access.</div><div class="ttdef"><b>Definition:</b> ptr.h:23</div></div>
+<div class="ttc" id="astructreadonly_1_1ro__ptr_html"><div class="ttname"><a href="structreadonly_1_1ro__ptr.html">readonly::ro_ptr</a></div><div class="ttdoc">Wrapper structure around a raw pointer signaling only read access.</div><div class="ttdef"><b>Definition:</b> ptr.h:24</div></div>
 </div><!-- fragment --> </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a598c492fa05ae3425a4215ace0a68618"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a598c492fa05ae3425a4215ace0a68618">&#9670;&nbsp;</a></span>unsafe_get()</h2>
@@ -170,7 +168,7 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li>include/ro/<a class="el" href="ptr_8h_source.html">ptr.h</a></li>
 </ul>
 </div><!-- contents -->
