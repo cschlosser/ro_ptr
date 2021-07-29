@@ -67,7 +67,7 @@ $(function() {
 <div class="title">Readonly Pointer wrapper </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_README"></a> <code><a class="el" href="structreadonly_1_1ro__ptr.html">readonly::ro_ptr</a></code> is a pointer wrapper guaranteeing the user of the API that the parameter is only used for reading and can be implicitly converted from <code>std::shared_ptr</code>, <code>std::unique_ptr</code> and raw pointers providing a homogeneous interface.</p>
+<div class="textblock"><p><a class="anchor" id="md_README"></a> <code><a class="el" href="structreadonly_1_1ro__ptr.html" title="Wrapper structure around a raw pointer signaling only read access.">readonly::ro_ptr</a></code> is a pointer wrapper guaranteeing the user of the API that the parameter is only used for reading and can be implicitly converted from <code>std::shared_ptr</code>, <code>std::unique_ptr</code> and raw pointers providing a homogeneous interface.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Building</h1>
 <p>This is a header-only project, all you have to do is copy <code><a class="el" href="ptr_8h_source.html">include/ro/ptr.h</a></code> into your project under <code><a class="el" href="ptr_8h_source.html">ro/ptr.h</a></code>, tell your build system the additional include directory and you're all set.</p>
@@ -112,7 +112,7 @@ Example</h1>
 <div class="line"><span class="comment">// state is never modified. The user also knows he doesn&#39;t have to call any additional</span></div>
 <div class="line"><span class="comment">// methods to provide this type to the API making code more readable.</span></div>
 <div class="line"><span class="keywordtype">void</span> foo(<a class="code" href="structreadonly_1_1ro__ptr.html">readonly::ro_ptr&lt;int&gt;</a> ptr);</div>
-<div class="ttc" id="astructreadonly_1_1ro__ptr_html"><div class="ttname"><a href="structreadonly_1_1ro__ptr.html">readonly::ro_ptr</a></div><div class="ttdef"><b>Definition:</b> ptr.h:40</div></div>
+<div class="ttc" id="astructreadonly_1_1ro__ptr_html"><div class="ttname"><a href="structreadonly_1_1ro__ptr.html">readonly::ro_ptr</a></div><div class="ttdoc">Wrapper structure around a raw pointer signaling only read access.</div><div class="ttdef"><b>Definition:</b> ptr.h:23</div></div>
 </div><!-- fragment --><div class="fragment"><div class="line"><span class="comment">// foo.cc</span></div>
 <div class="line"><span class="preprocessor">#include &quot;foo.h&quot;</span></div>
 <div class="line"> </div>
