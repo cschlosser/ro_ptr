@@ -1,0 +1,14 @@
+cc_library(
+    visibility = ["//visibility:public"],
+    name = "ro_ptr",
+    hdrs = ["include/ro/ptr.h"],
+    includes = ["include"],
+)
+
+cc_binary(
+    name = "showcase",
+    srcs = ["examples/showcase.cc"],
+    deps = [
+        ":ro_ptr",
+    ],
+)

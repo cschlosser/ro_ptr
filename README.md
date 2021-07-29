@@ -21,6 +21,37 @@ $> cmake ..
 $> make install
 ```
 
+### Bazel
+
+Add this to your `WORKSPACE` file:
+```starlark
+load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
+
+http_archive(
+  name = "com_github_cschlosser_ro_ptr",
+  urls = ["https://github.com/cschlosser/ro_ptr/archive/refs/tags/<version>.zip"],
+  sha256 = "...",
+)
+```
+
+and in a `BUILD` file example:
+
+```starlark
+cc_binary(
+    name = "example",
+    srcs = ["example.cc"],
+    deps = [
+        "@com_github_cschlosser_ro_ptr//:ro_ptr",
+    ],
+)
+```
+
+finally run:
+
+```bash
+$> bazel run //:example
+```
+
 ## Example
 
 This is probably the most basic example how this wrapper can be useful.
